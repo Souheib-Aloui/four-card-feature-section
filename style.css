@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  /* Primary */
+
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  
+/* Neutral */
+  
+  --VeryDark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --VeryLight-Gray: hsl(0, 0%, 98%);
+
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ img {
+  display: block;
+  max-width: 100%;
+ }
+body {
+  min-height: 100vh;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+}
+
+.container {
+  margin-bottom: 2rem;
+  max-width: 1340px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+.topside {
+  display: flex;
+ justify-content: center;
+ text-align: center;
+}
+.topside-box {
+  max-width: 500px;
+}
+h1 {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+.title-gray {
+  color: var(--Grayish-Blue);
+  font-weight: 200;
+  
+}
+.title-black {
+  color: var(--VeryDark-Blue);
+  font-weight: 600;
+}
+.topside-text {
+  color: var(--Grayish-Blue);
+  text-align: center;
+}
+.bottom-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.bottom-side > * {
+
+  padding: 1rem;
+}
+
+
+.box-title {
+  color: var(--VeryDark-Blue);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.box-text  {
+  color: var(--Grayish-Blue);
+  font-weight: 200;
+  margin-bottom: 2rem;
+  
+}
+.img-container {
+  display: flex;
+  justify-content: right;
+  margin-top: 1.25rem;
+
+}
+
+.middle-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.box-one {
+  border-top: 2px solid var(--Cyan);
+}
+.box-two {
+  border-top: 2px solid var(--Red);
+}
+.box-three {
+  border-top: 2px solid var(--Orange);
+}
+.box-four {
+  border-top: 2px solid var(--Blue);
+}
+
+.box {
+  border-radius: 0.4rem;
+  padding: 2rem ;
+  background-color: var(--VeryLight-Gray);
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 900.2px) and (max-width:1075px) {
+  .bottom-side {
+    gap: 1rem;
+  }
+  .box {
+    padding: 1.25rem;
+  }
+
+}
+
+ @media (max-width: 900px) {
+  .container {
+    padding: 1rem;
+    gap: 2rem;
+  }
+  .bottom-side {
+   grid-template-columns: 1fr;
+   
+  }
+  .box {
+    padding: 1rem;
+  }
+} 
+
+@media (max-width: 420.2px ) {
+  h1 {
+    font-size: 1.6rem;
+  }
+}
